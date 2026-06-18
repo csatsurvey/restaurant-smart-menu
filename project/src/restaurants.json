@@ -1,6 +1,6 @@
 {
-  "manhattan-lounge": {
-    "name": "Manhattan Lounge",
+  "anheung-galbi": {
+    "name": "AnHeung Galbi - 안흥갈비",
     "menu": [
       {
         "category": "FOOD",
@@ -33,13 +33,13 @@
             "price": 35500
           },
           {
-            "name": "MONGYU Steak 몽규 스테이크 (소고기)",
+            "name": "MONGYU Steak 몽규 스테이크 (소го기)",
             "description": "Хамгийн зөөлөн үхрийн махан стейк",
             "size": "200gr",
             "price": 49000
           },
           {
-            "name": "SPICY PORK RIBS 매운 돼지 등갈비",
+            "name": "SPICY PORK RIBS 매운 돼지 등갈би",
             "description": "Амталсан Гахайн Хавирга",
             "size": "500rp",
             "price": 53900
@@ -55,7 +55,7 @@
             "price": 30900
           },
           {
-            "name": "KALBI KIMCHI JIM 갈비 김치 찜",
+            "name": "KALBI KIMCHI JIM 갈би 김치 찜",
             "description": "Кимчитэй хавиргатай шөл 🌶️",
             "price": 30900
           }
