@@ -1,0 +1,54 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Catch-all Safeguard
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Global Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+    
+    function incoming() {
+      return request.resource.data;
+    }
+    
+    function existing() {
+      return resource.data;
+    }
+    
+    function isValidVault(data) {
+      return data.userId is string 
+        && data.userId.size() <= 128 
+        && data.userId == request.auth.uid
+        && data.ciphertext is string 
+        && data.ciphertext.size() <= 200000
+        && data.iv is string 
+        && data.iv.size() <= 128
+        && data.salt is string 
+        && data.salt.size() <= 128
+        && data.version is int
+        && data.testValue is string 
+        && data.testValue.size() <= 500
+        && data.testIv is string 
+        && data.testIv.size() <= 128;
+    }
+
+    match /vaults/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow create: if isOwner(userId) && isValidId(userId) && isValidVault(incoming()) && incoming().updatedAt == request.time;
+      allow update: if isOwner(userId) && isValidId(userId) && isValidVault(incoming()) && incoming().updatedAt == request.time;
+      allow delete: if isOwner(userId) && isValidId(userId);
+    }
+  }
+}

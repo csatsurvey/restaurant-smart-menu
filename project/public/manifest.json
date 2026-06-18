@@ -1,0 +1,22 @@
+{
+  "name": "Рестораны Меню & Судалгаа",
+  "short_name": "Ресторан Меню",
+  "description": "Рестораны QR меню захиалга, хэрэглэгчийн сэтгэл ханамжийн судалгаа болон менежерийн дашбоард.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#7c1d1d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/color/256/restaurant.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://img.icons8.com/color/512/restaurant.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

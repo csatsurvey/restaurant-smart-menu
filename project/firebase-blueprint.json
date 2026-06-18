@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "Vault": {
+      "title": "Vault",
+      "description": "Indicates the encrypted zero-knowledge password vault storage of the user",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who owns this vault"
+        },
+        "ciphertext": {
+          "type": "string",
+          "description": "AES-GCM encrypted passwords JSON"
+        },
+        "iv": {
+          "type": "string",
+          "description": "Initialization vector"
+        },
+        "salt": {
+          "type": "string",
+          "description": "PBKDF2 key derivation salt"
+        },
+        "version": {
+          "type": "number",
+          "description": "Format version"
+        },
+        "testValue": {
+          "type": "string",
+          "description": "Verification test value"
+        },
+        "testIv": {
+          "type": "string",
+          "description": "Verification test IV"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time this vault was last updated"
+        }
+      },
+      "required": ["userId", "ciphertext", "iv", "salt", "version", "testValue", "testIv", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/vaults/{userId}": {
+      "schema": "Vault",
+      "description": "Contains user-specific encrypted zero-knowledge vaults"
+    }
+  }
+}

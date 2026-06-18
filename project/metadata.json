@@ -1,0 +1,6 @@
+{
+  "name": "Рестораны Меню & Судалгааны Дашбоард",
+  "description": "Рестораны QR меню захиалга, хэрэглэгчийн сэтгэл ханамжийн судалгаа болон менежерийн дүн шинжилгээний дашбоард нэгдсэн систем.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

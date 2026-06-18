@@ -1,0 +1,15 @@
+{
+  "gurme-bento": {
+    "restaurantName": "Гүрмэ Бэнто Ресторан",
+    "themeColor": "amber",
+    "tables": ["Ширээ 1", "Ширээ 2", "Ширээ 3"],
+    "employees": [
+      {"name": "Тулга", "role": "Chef", "pin": "1111"},
+      {"name": "Сарнай", "role": "Waiter", "pin": "2222"}
+    ],
+    "menu": [
+      {"id": 1, "name": "Уламжлалт Шүүслэг Хуушуур", "price": 16500, "category": "Бууз/Хуушуур"},
+      {"id": 2, "name": "Утаат Таван Тэнгэр Цуйван", "price": 18000, "category": "Европ хоол"}
+    ]
+  }
+}
