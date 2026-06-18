@@ -1,15 +1,182 @@
 {
-  "gurme-bento": {
-    "restaurantName": "Гүрмэ Бэнто Ресторан",
-    "themeColor": "amber",
-    "tables": ["Ширээ 1", "Ширээ 2", "Ширээ 3"],
-    "employees": [
-      {"name": "Тулга", "role": "Chef", "pin": "1111"},
-      {"name": "Сарнай", "role": "Waiter", "pin": "2222"}
-    ],
+  "manhattan-lounge": {
+    "name": "Manhattan Lounge",
     "menu": [
-      {"id": 1, "name": "Уламжлалт Шүүслэг Хуушуур", "price": 16500, "category": "Бууз/Хуушуур"},
-      {"id": 2, "name": "Утаат Таван Тэнгэр Цуйван", "price": 18000, "category": "Европ хоол"}
+      {
+        "category": "FOOD",
+        "items": [
+          {
+            "name": "RICE 공기밥",
+            "description": "Будаа",
+            "price": 2900
+          },
+          {
+            "name": "Bibimbap 비빔밥",
+            "description": "Бибимбап",
+            "price": 30900
+          },
+          {
+            "name": "Kimbap 김밥",
+            "description": "Кимбап",
+            "price": 13500
+          },
+          {
+            "name": "Special Marinated Pork Neck 양념목살",
+            "description": "Амталсан Гахайн Хүзүү ОНЦГОЙ",
+            "size": "250rp",
+            "price": 39900
+          },
+          {
+            "name": "Samgyeopsal 삼겹살",
+            "description": "Самгёбсал",
+            "size": "250gr",
+            "price": 35500
+          },
+          {
+            "name": "MONGYU Steak 몽규 스테이크 (소고기)",
+            "description": "Хамгийн зөөлөн үхрийн махан стейк",
+            "size": "200gr",
+            "price": 49000
+          },
+          {
+            "name": "SPICY PORK RIBS 매운 돼지 등갈비",
+            "description": "Амталсан Гахайн Хавирга",
+            "size": "500rp",
+            "price": 53900
+          },
+          {
+            "name": "JEYUK BOKKEUM 제육볶음",
+            "description": "Халуун ногоотой гахайн мах 2 хүний сет 🌶️🌶️",
+            "price": 64900
+          },
+          {
+            "name": "Ttukbulgugi 뚝배기 불고기",
+            "description": "Тукбулгуги",
+            "price": 30900
+          },
+          {
+            "name": "KALBI KIMCHI JIM 갈비 김치 찜",
+            "description": "Кимчитэй хавиргатай шөл 🌶️",
+            "price": 30900
+          }
+        ]
+      },
+      {
+        "category": "ALCOHOL",
+        "items": [
+          {
+            "name": "Cass",
+            "size": "330ml",
+            "price": 12000
+          },
+          {
+            "name": "Cass",
+            "size": "500ml",
+            "price": 12000
+          },
+          {
+            "name": "Terra",
+            "size": "500ml",
+            "price": 12000
+          },
+          {
+            "name": "Tsingtao",
+            "size": "500ml",
+            "price": 11000
+          },
+          {
+            "name": "Sengur",
+            "size": "450ml",
+            "price": 9500
+          },
+          {
+            "name": "Heineken",
+            "size": "330ml",
+            "price": 12000
+          },
+          {
+            "name": "Kirin ichiban",
+            "size": "330ml",
+            "price": 13500
+          },
+          {
+            "name": "Heineken 500 ml",
+            "description": "Laaztai",
+            "price": 14900
+          },
+          {
+            "name": "Olmeca Gold",
+            "size": "700ml",
+            "price": 232500
+          },
+          {
+            "name": "Olmeca Gold",
+            "size": "50ml",
+            "price": 17900
+          },
+          {
+            "name": "Olmeca Silver",
+            "size": "700ml",
+            "price": 232500
+          },
+          {
+            "name": "Olmeca Silver",
+            "size": "50ml",
+            "price": 17900
+          },
+          {
+            "name": "Sierra Gold",
+            "size": "700ml",
+            "price": 251800
+          },
+          {
+            "name": "Cointreau",
+            "size": "700ml",
+            "price": 333300
+          },
+          {
+            "name": "Cointreau",
+            "size": "50ml",
+            "price": 22200
+          }
+        ]
+      },
+      {
+        "category": "WINE",
+        "items": [
+          {
+            "name": "Hardy's Pinot",
+            "price": 110000
+          },
+          {
+            "name": "Romio Pinot Grigio",
+            "price": 195650
+          },
+          {
+            "name": "William Hardy's Chardonnay",
+            "size": "750ml",
+            "price": 147000
+          },
+          {
+            "name": "White wine 150ml",
+            "price": 26900
+          },
+          {
+            "name": "Hardy's Chardonnay 750 ml",
+            "price": 94500
+          },
+          {
+            "name": "ROMIO Romagna Sangiovese",
+            "description": "12% vol. Emilia-Romagna / ITALY",
+            "size": "750ml",
+            "price": 171150
+          }
+        ]
+      },
+      {
+        "category": "DRINKS",
+        "items": []
+      }
     ]
   }
 }
